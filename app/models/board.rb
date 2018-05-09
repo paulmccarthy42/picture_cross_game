@@ -11,7 +11,7 @@ class Board < ApplicationRecord
     end
 
     cells.each.with_object(empty_map) do |cell, map|
-      map[cell.x_position][cell.y_position] = cell.filled ? "cell-filled" : "cell-empty"
+      map[cell.x_position][cell.y_position] = cell.as_json
     end
   end
 

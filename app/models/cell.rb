@@ -5,7 +5,8 @@ class Cell < ApplicationRecord
     {
       x_position: x_position,
       y_position: y_position,
-      filled: filled
+      filled: filled,
+      shown: false
     }
   end
 end
