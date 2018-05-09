@@ -6,7 +6,7 @@ class Cell < ApplicationRecord
       x_position: x_position,
       y_position: y_position,
       filled: filled,
-      shown: false
+      shownFilled: false
     }
   end
 end
