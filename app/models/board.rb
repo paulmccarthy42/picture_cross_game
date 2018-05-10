@@ -20,7 +20,7 @@ class Board < ApplicationRecord
       id: id,
       size: "#{size} by #{size}",
       completed: completed,
-      cells: map
+      cells: cells.as_json
     }
   end
 end
