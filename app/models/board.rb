@@ -18,7 +18,7 @@ class Board < ApplicationRecord
   def as_json
     {
       id: id,
-      size: "#{size} by #{size}",
+      size: size,
       completed: completed,
       cells: cells.as_json
     }
