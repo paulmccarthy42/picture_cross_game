@@ -20,7 +20,7 @@ class Board < ApplicationRecord
       id: id,
       size: size,
       completed: completed,
-      cells: cells.as_json
+      cells: cells.order(:x_position, :y_position).as_json
     }
   end
 end
