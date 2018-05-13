@@ -18,6 +18,7 @@ class Board < ApplicationRecord
   def as_json
     {
       id: id,
+      name: name,
       size: size,
       completed: completed,
       cells: cells.order(:x_position, :y_position).as_json
