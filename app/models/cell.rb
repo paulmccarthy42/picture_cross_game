@@ -3,6 +3,7 @@ class Cell < ApplicationRecord
 
   def as_json
     {
+      name: name,
       id: id,
       x_position: x_position,
       y_position: y_position,
